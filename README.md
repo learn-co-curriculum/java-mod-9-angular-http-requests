@@ -229,13 +229,13 @@ Angular has native support for making `HTTP` requests to `REST` endpoints
 through its `HttpClient` module. In order to be able to use that module, we have
 to import it in our `app.module.ts` file:
 
-1. Import the class to let TypeScript know about it:
+- Import the class to let TypeScript know about it:
 
 ```typescript
 import { HttpClientModule } from "@angular/common/http";
 ```
 
-2. Add the module to the array of imports to let Angular know about it:
+- Add the module to the array of imports to let Angular know about it:
 
 ```typescript
   imports: [
@@ -295,14 +295,14 @@ Our Message Data Service in `messaging-data.service.ts` is where we manage our
 application's data, so that's where we're going to implement our interface with
 our new endpoint.
 
-1. We start by importing the `HttpClient` class so TypeScript knows about it in
+- We start by importing the `HttpClient` class so TypeScript knows about it in
    this service:
 
 ```typescript
 import { HttpClient } from "@angular/common/http";
 ```
 
-2. Then we ask Angular to inject an instance of the module in our service by
+- Then we ask Angular to inject an instance of the module in our service by
    adding it to our constructor:
 
 ```typescript
@@ -314,7 +314,7 @@ import { HttpClient } from "@angular/common/http";
     }
 ```
 
-3. Now we're ready to change the implementation of `getSenderMessages()` and
+- Now we're ready to change the implementation of `getSenderMessages()` and
    `getUserMessages()` to fetch their data from an API instead of having it
    hardcoded locally
 
